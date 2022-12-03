@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="MobileOptimized" content="176"/>
+  <meta name="HandheldFriendly" content="True"/>
+  <meta name="robots" content="noindex,nofollow"/>
+  <link rel="stylesheet" href="../styles/general.css" />
+  <title></title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="../components/selector.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+<select>
+  <option value="">Оберіть категорію</option>
+  <option value="Продукти">Продукти</option>
+  <option value="Кафе та Ресторани">Кафе та Ресторани</option>
+  <option value="Аптеки та Медицина">Аптеки та Медицина</option>
+  <option value="АЗС та Автомагазини">АЗС та Автомагазини</option>
+  <option value="Розваги">Розваги</option>
+  <option value="Опенспейси/Хаби для роботи">Опенспейси/Хаби для роботи</option>
+  <option value="Одяг та Взуття">Одяг та Взуття</option>
+</select>
+
+<fieldset id="custom">
+  <legend for="">
+    Для початку оберіть категорію місця
+  </legend>
+  <select id="custom-selector">
+    <option value="">Оберіть категорію</option>
+    <option value="Продукти">Продукти</option>
+    <option value="Кафе та Ресторани">Кафе та Ресторани</option>
+    <option value="Аптеки та Медицина">Аптеки та Медицина</option>
+    <option value="АЗС та Автомагазини">АЗС та Автомагазини</option>
+    <option value="Розваги">Розваги</option>
+    <option value="Опенспейси/Хаби для роботи">Опенспейси/Хаби для роботи</option>
+    <option value="Одяг та Взуття">Одяг та Взуття</option>
+  </select>
+</fieldset>
+
+<script>
+  window.onload = () => {
+    const w = new Selector('#custom-selector');
+
+    console.log(w);
+  };
+</script>
+</body>
+</html>
