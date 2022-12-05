@@ -9,46 +9,51 @@
   <meta name="MobileOptimized" content="176"/>
   <meta name="HandheldFriendly" content="True"/>
   <meta name="robots" content="noindex,nofollow"/>
-  <link rel="stylesheet" href="../styles/general.css" />
+
   <title></title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="../styles/general.css" />
+  <link rel="stylesheet" href="../styles/select.css" />
   <script src="../components/selector.js"></script>
   <style>
   </style>
 </head>
 <body>
-<select>
-  <option value="">Оберіть категорію</option>
-  <option value="Продукти">Продукти</option>
-  <option value="Кафе та Ресторани">Кафе та Ресторани</option>
-  <option value="Аптеки та Медицина">Аптеки та Медицина</option>
-  <option value="АЗС та Автомагазини">АЗС та Автомагазини</option>
-  <option value="Розваги">Розваги</option>
-  <option value="Опенспейси/Хаби для роботи">Опенспейси/Хаби для роботи</option>
-  <option value="Одяг та Взуття">Одяг та Взуття</option>
-</select>
 
-<fieldset id="custom">
-  <legend for="">
-    Для початку оберіть категорію місця
-  </legend>
-  <select id="custom-selector">
-    <option value="">Оберіть категорію</option>
-    <option value="Продукти">Продукти</option>
-    <option value="Кафе та Ресторани">Кафе та Ресторани</option>
-    <option value="Аптеки та Медицина">Аптеки та Медицина</option>
-    <option value="АЗС та Автомагазини">АЗС та Автомагазини</option>
-    <option value="Розваги">Розваги</option>
-    <option value="Опенспейси/Хаби для роботи">Опенспейси/Хаби для роботи</option>
-    <option value="Одяг та Взуття">Одяг та Взуття</option>
-  </select>
-</fieldset>
+
+<label>
+    <select id="test">
+      <option value="">Оберіть категорію</option>
+      <option value="Продукти">Продукти</option>
+      <option value="Кафе та Ресторани">Кафе та Ресторани</option>
+      <option value="Аптеки та Медицина">Аптеки та Медицина</option>
+      <option value="АЗС та Автомагазини">АЗС та Автомагазини</option>
+      <option value="Розваги">Розваги</option>
+      <option value="Опенспейси/Хаби для роботи">Опенспейси/Хаби для роботи</option>
+      <option value="Одяг та Взуття">Одяг та Взуття</option>
+    </select>
+</label>
+<!--<fieldset id="custom">-->
+<!--  <legend for="">-->
+<!--    Для початку оберіть категорію місця-->
+<!--  </legend>-->
+<!--  <select id="custom-selector">-->
+<!--    <option value="">Оберіть категорію</option>-->
+<!--    <option value="Продукти">Продукти</option>-->
+<!--    <option value="Кафе та Ресторани">Кафе та Ресторани</option>-->
+<!--    <option value="Аптеки та Медицина">Аптеки та Медицина</option>-->
+<!--    <option value="АЗС та Автомагазини">АЗС та Автомагазини</option>-->
+<!--    <option value="Розваги">Розваги</option>-->
+<!--    <option value="Опенспейси/Хаби для роботи">Опенспейси/Хаби для роботи</option>-->
+<!--    <option value="Одяг та Взуття">Одяг та Взуття</option>-->
+<!--  </select>-->
+<!--</fieldset>-->
 
 <script>
   window.onload = () => {
-    const w = new Selector('#custom-selector');
-
-    console.log(w);
+    // const w = new Selector('#custom-selector');
+    //
+    // console.log(w);
   };
 </script>
 </body>
