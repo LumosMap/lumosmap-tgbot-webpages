@@ -15,8 +15,14 @@
   <link rel="stylesheet" href="../styles/general.css" />
   <link rel="stylesheet" href="../styles/select.css" />
   <script src="../components/selector.js"></script>
-  <style>
-  </style>
+    <script>
+      function setThemeClass() {
+        document.documentElement.className = Telegram.WebApp.colorScheme;
+      }
+
+      Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+      setThemeClass();
+    </script>
 </head>
 <body>
 
