@@ -12,33 +12,37 @@
 
   <title></title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <link rel="stylesheet" href="../styles/general.css" />
-  <link rel="stylesheet" href="../styles/select.css" />
+  <link rel="stylesheet" href="../styles/general.css"/>
+  <link rel="stylesheet" href="../styles/select.css"/>
   <script src="../components/selector.js"></script>
-    <script>
-      function setThemeClass() {
-        document.documentElement.className = Telegram.WebApp.colorScheme;
-      }
+  <script>
+    function setThemeClass() {
+      document.documentElement.className = Telegram.WebApp.colorScheme;
+    }
 
-      Telegram.WebApp.onEvent('themeChanged', setThemeClass);
-      setThemeClass();
-    </script>
+    Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+    setThemeClass();
+  </script>
 </head>
 <body>
 
 
 <label list="ice-cream-flavors">
-    <select id="test">
-      <option value="">Оберіть категорію</option>
-      <option value="Продукти">Продукти</option>
-      <option value="Кафе та Ресторани">Кафе та Ресторани</option>
-      <option value="Аптеки та Медицина">Аптеки та Медицина</option>
-      <option value="АЗС та Автомагазини">АЗС та Автомагазини</option>
-      <option value="Розваги">Розваги</option>
-      <option value="Опенспейси/Хаби для роботи">Опенспейси/Хаби для роботи</option>
-      <option value="Одяг та Взуття">Одяг та Взуття</option>
-    </select>
-  <img src="../assets/images/arrow-down.svg"/>
+  <select id="test">
+    <option value="">Оберіть категорію</option>
+    <option value="Продукти">Продукти</option>
+    <option value="Кафе та Ресторани">Кафе та Ресторани</option>
+    <option value="Аптеки та Медицина">Аптеки та Медицина</option>
+    <option value="АЗС та Автомагазини">АЗС та Автомагазини</option>
+    <option value="Розваги">Розваги</option>
+    <option value="Опенспейси/Хаби для роботи">Опенспейси/Хаби для роботи</option>
+    <option value="Одяг та Взуття">Одяг та Взуття</option>
+  </select>
+  <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L6.92929 6.92929C6.96834 6.96834 7.03166 6.96834 7.07071 6.92929L13 1" stroke="currentColor"
+          stroke-linecap="round"/>
+  </svg>
+
 </label>
 
 <datalist id="ice-cream-flavors">
