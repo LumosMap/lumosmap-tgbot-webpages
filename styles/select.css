@@ -2,13 +2,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --select-arrow-width: 16px;
+    --select-arrow-height: calc(var(--select-arrow-width, 12px) / 2);
+}
+
 select {
     width: 100%;
     outline: none;
     border: none;
+    appearance: none;
 }
 
 label {
+    display: flex;
+    align-items: center;
     padding: 10px;
     margin: 10px;
     border-radius: 8px;
@@ -17,6 +25,12 @@ label {
     max-height: 45px;
 }
 
-img {
+label select, label img {
+    display: inline-block;
+}
+
+label img {
     vertical-align: middle;
+    width: var(--select-arrow-width);
+    height: var(--select-arrow-height);
 }
